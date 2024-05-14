@@ -35,7 +35,7 @@ export interface NavigationProps extends NativeNavigationDivProps, NavigationOpt
  *
  * - 레이아웃 헤더에 위치하는 네비게이션 바 컴포넌트입니다.
  * - 로고 이미지를 지정할 수 있습니다.
- * - 메뉴 항목을 지정할 수 있습니다.
+ * - 메뉴 항목을 지정할 수 있습니다. (메뉴 및 서브메뉴 까지 총 2depth)
  */
 export const Navigation = forwardRef((props: NavigationProps, forwardedRef: ForwardedRef<HTMLDivElement>) => {
   // props
