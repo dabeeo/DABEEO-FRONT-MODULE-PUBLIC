@@ -8,13 +8,13 @@ const TEST_MENUS = [
   {
     idx: 1,
     name: '매장 관리',
-    path: '',
+    path: 'path',
     isActive: true,
   },
   {
     idx: 2,
     name: '카테고리 관리',
-    path: '',
+    path: 'path',
     isActive: false,
     subMenus: [
       {idx: 1, name: 'sub 1', path: '카테고리 관리 서브1 path', isActive: false},
@@ -24,7 +24,7 @@ const TEST_MENUS = [
   {
     idx: 3,
     name: '사용자 메뉴',
-    path: '',
+    path: 'path',
     isActive: false,
     subMenus: [
       {idx: 1, name: '사용자 메뉴 sub 1', path: '사용자 메뉴 sub 1 path', isActive: false},
