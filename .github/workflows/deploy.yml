@@ -35,7 +35,9 @@ jobs:
     - name: Build Storybook
       run: |
         yarn run build-storybook
-        mkdir ./dist
+        pwd
+        ls -la
+        mkdir -p ./dist
         mv ./storybook-static ./dist/storybook
       working-directory: ./dabeeo-react-ui
 
