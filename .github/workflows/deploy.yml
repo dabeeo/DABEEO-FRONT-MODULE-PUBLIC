@@ -3,11 +3,7 @@ on: # 언제 실행?
   push:
     branches: dev # dev 브랜치
     paths: 'dabeeo-react-ui/src/components/**' # dabeeo-react-ui 아래 컴포넌트쪽 변경이 일어나는 경우?
-  
-defaults: # script를 실행 할 경로
-  run:
-    working-directory: ./dabeeo-react-ui
-
+    
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
