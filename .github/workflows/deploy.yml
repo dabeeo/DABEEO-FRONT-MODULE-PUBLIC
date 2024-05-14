@@ -39,6 +39,7 @@ jobs:
         ls -la
         mkdir -p ./dist
         mv ./storybook-static ./dist/storybook
+        ls -la
       working-directory: ./dabeeo-react-ui
 
     - name: Deploy to gh-pages branch
