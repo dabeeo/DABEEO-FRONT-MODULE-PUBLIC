@@ -3,6 +3,8 @@ import tsconfigPaths from 'vite-plugin-tsconfig-paths';
 import {join, dirname, resolve} from 'path';
 import {mergeConfig} from 'vite';
 
+const toPath = (_path: string) => join(process.cwd(), _path)
+
 /**
  * This function is used to resolve the absolute path of a package.
  * It is needed in projects that use Yarn PnP or are set up within a monorepo.
@@ -38,19 +40,15 @@ const config: StorybookConfig = {
     return mergeConfig(configWithTsPaths, {
       resolve: {
         alias: {
-          '@emotion/core': 'node_modules/@emotion/react',
-          '@emotion/styled': 'node_modules/@emotion/styled',
-          'emotion-theming': 'node_modules/@emotion/react',
-          '@src': resolve(__dirname, '../src'),
-          '@assets': resolve(__dirname, '../src/assets'),
-          '@components': resolve(__dirname, '../src/components'),
-          '@utils': resolve(__dirname, '../src/utils'),
+          '@emotion/core': toPath('node_modules/@emotion/react'),
+          '@emotion/styled': toPath('node_modules/@emotion/styled'),
+          'emotion-theming': toPath('node_modules/@emotion/react'),
+          '@src': toPath('src'),
+          '@assets': toPath('src/assets'),
+          '@components': toPath('src/components'),
+          '@utils': toPath('src/utils'),
         },
-      },
-      esbuild: {
-        jsxFactory: `jsx`,
-        jsxInject: `import { jsx } from '@emotion/react'`,
-      },
+      }
     });
   },
 };

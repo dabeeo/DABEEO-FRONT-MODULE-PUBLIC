@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import {Stack, StackProps} from '@components/Stack/Stack';
 import {ArgTypes, Meta, StoryObj} from '@storybook/react';
 import React from 'react';
-
-import {Stack, StackProps} from './Stack';
 
 const controlNone: Partial<ArgTypes<StackProps>> = {
   flexDirection: {

@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import STD3D_LOGO_IMAGE from '@assets/images/logo_studio_3d.svg';
 import {Navigation} from '@components/Navigation/Navigation';
 import {Meta, StoryObj} from '@storybook/react';
+import React from 'react';
 
 const TEST_MENUS = [
   {

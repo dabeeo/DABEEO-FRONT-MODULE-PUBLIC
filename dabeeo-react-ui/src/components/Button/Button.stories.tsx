@@ -1,11 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import {Button, ButtonProps} from '@components/Button/Button';
+import {ColorScheme, Size, Variant} from '@components/Button/Button.types';
+import {Stack} from '@components/Stack/Stack';
 import {ArgTypes, Meta, StoryObj} from '@storybook/react';
 import React from 'react';
 import {FiPlus, FiSearch} from 'react-icons/fi';
-
-import {Stack} from '../Stack/Stack';
-import {Button, ButtonProps} from './Button';
-import {ColorScheme, Size, Variant} from './Button.types';
 
 const controlNone: Partial<ArgTypes<ButtonProps>> = {
   size: {
