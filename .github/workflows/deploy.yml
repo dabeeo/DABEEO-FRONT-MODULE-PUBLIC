@@ -1,18 +1,44 @@
 name: Build & Deploy Storybook
-on:
+on: # 언제 실행?
   push:
-    branches: [dev]
-    paths: ['dabeeo-react-ui/src/components/**']
+    branches: dev # dev 브랜치
+    paths: 'dabeeo-react-ui/src/components/**' # dabeeo-react-ui 아래 컴포넌트쪽 변경이 일어나는 경우?
+  
+defaults: # script를 실행 할 경로
+  run:
+    working-directory: ./dabeeo-react-ui
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions: 
+      contents: write
+    concurrency:
+        group: ${{ github.workflow }}
+        cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v2
-      - name: Install and Build 🔧
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: 'yarn'
+          cache-dependancy-path: ./dabeeo-react-ui/yarn.lock
+
+      - name: Install dependencies
         run: |
-          yarn set version berry
-          yarn install
-          yarn run deploy-storybook -- --ci
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          yarn install --frozen-lockfile
         working-directory: ./dabeeo-react-ui
+
+      - name: Build Storybook
+        run: |
+          yarn build-storybook
+          mkdir ./dist
+          mv ./storybook-static ./dist/storybook
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          working-directory: ./dabeeo-react-ui
