@@ -36,8 +36,13 @@ jobs:
       run: |
         yarn run build-storybook
         pwd
+        ls -la
         mkdir -p ./dist
         mv ./storybook-static ./dist/storybook
+        echo "Listing contents of ./dist:"
+        ls -la ./dist
+        echo "Listing contents of ./dist/storybook:"
+        ls -la ./dist/storybook
       working-directory: ./dabeeo-react-ui
 
     - name: Deploy to gh-pages branch
