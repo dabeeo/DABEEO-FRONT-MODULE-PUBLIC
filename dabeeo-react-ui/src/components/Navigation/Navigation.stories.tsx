@@ -27,8 +27,8 @@ const TEST_MENUS = [
     path: '',
     isActive: false,
     subMenus: [
-      {idx: 1, name: '사용자 메뉴 sub 1', path: '사용자 메뉴 sub 1 경로', isActive: false},
-      {idx: 2, name: '사용자 메뉴 sub 2', path: '사용자 메뉴 sub 2 경로', isActive: false},
+      {idx: 1, name: '사용자 메뉴 sub 1', path: '사용자 메뉴 sub 1 path', isActive: false},
+      {idx: 2, name: '사용자 메뉴 sub 2', path: '사용자 메뉴 sub 2 path', isActive: false},
     ],
   },
   {idx: 4, name: '기기 관리', path: ''},
