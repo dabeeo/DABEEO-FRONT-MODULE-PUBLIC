@@ -21,10 +21,6 @@ jobs:
       
       - name: Setup Node.js
         uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-          cache: 'yarn'
-          cache-dependancy-path: ./dabeeo-react-ui/yarn.lock
 
       - name: Install dependencies
         run: |
