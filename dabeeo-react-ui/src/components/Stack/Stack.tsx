@@ -1,5 +1,5 @@
 import {AlignItems, FlexDirection, JustifyContent, NativeStackDivProps} from '@components/Stack/Stack.types';
-import {CSSProperties, ForwardedRef, forwardRef} from 'react';
+import {CSSProperties, ForwardedRef, forwardRef, ReactNode} from 'react';
 
 import {StyledStack} from './Stack.styles';
 
@@ -10,7 +10,7 @@ export type StackOptions = {
   gap?: number;
 };
 export interface StackProps extends NativeStackDivProps, StackOptions {
-  children?: React.ReactNode;
+  children?: ReactNode;
   style?: CSSProperties | undefined;
 }
 
