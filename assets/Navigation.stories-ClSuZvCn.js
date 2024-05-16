@@ -1,4 +1,4 @@
-import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-styled.browser.esm-C8uKGUUh.js";import{r as b}from"./index-CTjT7uj6.js";import"./emotion-use-insertion-effect-with-fallbacks.browser.esm-CI9L3Xya.js";const w=""+new URL("logo_studio_3d-Cke9wGlY.svg",import.meta.url).href,V=i.div`
+import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-styled.browser.esm-C_rvHyWL.js";import{r as b}from"./index-CTjT7uj6.js";import"./emotion-use-insertion-effect-with-fallbacks.browser.esm-CI9L3Xya.js";const w=""+new URL("logo_studio_3d-Cke9wGlY.svg",import.meta.url).href,V=i.div`
   display: flex;
   gap: ${({gap:e})=>e&&`${e/10}rem`};
   width: ${({sizeFull:e,wFull:a,width:n})=>e||a?"100%":n&&`${n/10}rem`};
@@ -24,7 +24,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
 `,G=i.div`
   width: ${({width:e})=>e?`${e/10}rem`:"100%"};
   height: ${({height:e})=>e?`${e/10}rem`:"0.1rem"};
-  background-color: ${({color:e})=>e?e==="gray"?"var(--color-gray-ea)":"var(--color-black-da)":"var(--color-gray-ea)"};
+  background-color: ${({color:e})=>e?e==="gray"?"var(--color-gray-06)":"var(--color-primary-da-black)":"var(--color-gray-06)"};
 `,B=i.div`
   z-index: 50;
   position: fixed;
@@ -36,7 +36,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   width: 100%;
   height: 8rem;
   padding: 0 3rem;
-  // background-color: var(--color-white-bg);
+  // background-color: var(--color-primary-white);
   background-color: #f9f9f9;
 `,z=i.nav`
   position: relative;
@@ -77,7 +77,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   a {
     font-size: var(--font-h3);
     font-weight: ${({$isActive:e})=>e?"var(--font-weight-700)":"var(--font-weight-500);"};
-    color: ${({$isActive:e})=>e?"var(--color-gray-22)":"var(--color-gray-99);"};
+    color: ${({$isActive:e})=>e?"var(--color-gray-01)":"var(--color-blue-black-04);"};
   }
 `,H=i.div`
   display: flex;
@@ -109,12 +109,12 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   border-radius: 0.2rem;
   padding: 0.4rem 0;
 `,J=i(R)`
-  background: var(--color-white-bg);
+  background: var(--color-primary-white);
   font-size: var(--font-h4);
   font-weight: ${({$isActive:e})=>e?"var(--font-weight-700)":"var(--font-weight-500);"};
-  color: ${({$isActive:e})=>e?"var(--color-gray-22)":"var(--color-gray-99);"};
+  color: ${({$isActive:e})=>e?"var(--color-gray-01)":"var(--color-blue-black-04);"};
   &:hover {
-    color: var(--color-gray-44);
+    color: var(--color-gray-02);
   }
 `,K="data:image/svg+xml,%3csvg%20width='12'%20height='9'%20viewBox='0%200%2012%209'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M5.99994%200L11.4999%209H0.499939L5.99994%200Z'%20fill='white'/%3e%3c/svg%3e",E=({menu:e,menuActive:a,subMenuActive:n,menuClick:p,subMenuClick:o})=>{const[x,c]=b.useState(!1),l=()=>{c(!0)},m=()=>{c(!1)},g=(s,u)=>u==="menu"&&a?a.name===s.name&&a.path===s.path:u==="subMenu"&&n?n.name===s.name&&n.path===s.path:!1;return t.jsxs(P,{onFocus:e.subMenus&&l,onMouseOver:e.subMenus&&l,onMouseLeave:e.subMenus&&m,onBlur:e.subMenus&&m,$isActive:a&&g(e,"menu"),children:[t.jsx("a",{onClick:()=>{p&&p(e)},children:e.name}),x&&e.subMenus&&t.jsx(X,{children:t.jsxs(Y,{children:[t.jsx(k,{children:t.jsx("img",{src:K,alt:"arrow"})}),t.jsx(Z,{children:e.subMenus.map((s,u)=>t.jsxs(J,{$isActive:a&&g(s,"subMenu"),onClick:()=>o&&o(e,s),children:[t.jsx(k,{height:40,children:s.name}),e.subMenus&&u<e.subMenus.length-1&&t.jsx(G,{color:"gray",width:60})]},s.idx))})]})})]},e.idx)};E.__docgenInfo={description:"",methods:[],displayName:"NavigationMenuItem",props:{menu:{required:!0,tsType:{name:"signature",type:"object",raw:`{
   idx: number;
