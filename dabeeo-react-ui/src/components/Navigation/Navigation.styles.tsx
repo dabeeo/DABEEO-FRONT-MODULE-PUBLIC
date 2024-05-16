@@ -21,7 +21,7 @@ export const StyledNavigation = styled.div<StyledNavigationProps>`
   width: 100%;
   height: 8rem;
   padding: 0 3rem;
-  // background-color: var(--color-white-bg);
+  // background-color: var(--color-primary-white);
   background-color: #f9f9f9;
 `;
 
@@ -70,7 +70,7 @@ export const StyledNavigationMenuList = styled.li<{$isActive?: boolean}>`
   a {
     font-size: var(--font-h3);
     font-weight: ${({$isActive}) => ($isActive ? 'var(--font-weight-700)' : 'var(--font-weight-500);')};
-    color: ${({$isActive}) => ($isActive ? 'var(--color-gray-22)' : 'var(--color-gray-99);')};
+    color: ${({$isActive}) => ($isActive ? 'var(--color-gray-01)' : 'var(--color-blue-black-04);')};
   }
 `;
 
@@ -114,11 +114,11 @@ export const SubMenuItemModalWrapper = styled.div`
 `;
 
 export const SubMenuItemModalInnerWrapper = styled(FlexColCenterBox)<{$isActive?: boolean}>`
-  background: var(--color-white-bg);
+  background: var(--color-primary-white);
   font-size: var(--font-h4);
   font-weight: ${({$isActive}) => ($isActive ? 'var(--font-weight-700)' : 'var(--font-weight-500);')};
-  color: ${({$isActive}) => ($isActive ? 'var(--color-gray-22)' : 'var(--color-gray-99);')};
+  color: ${({$isActive}) => ($isActive ? 'var(--color-gray-01)' : 'var(--color-blue-black-04);')};
   &:hover {
-    color: var(--color-gray-44);
+    color: var(--color-gray-02);
   }
 `;

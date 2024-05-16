@@ -34,5 +34,5 @@ export const DivideLine = styled.div<DivideLineProps>`
   width: ${({width}) => (width ? `${width / 10}rem` : '100%')};
   height: ${({height}) => (height ? `${height / 10}rem` : '0.1rem')};
   background-color: ${({color}) =>
-    color ? (color === 'gray' ? 'var(--color-gray-ea)' : 'var(--color-black-da)') : 'var(--color-gray-ea)'};
+    color ? (color === 'gray' ? 'var(--color-gray-06)' : 'var(--color-primary-da-black)') : 'var(--color-gray-06)'};
 `;

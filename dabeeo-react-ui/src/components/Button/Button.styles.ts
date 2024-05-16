@@ -30,83 +30,83 @@ const SIZES = {
 
 const VARIANTS = {
   solid: css`
-    --button-color: var(--color-gray-ea);
-    --button-bg-color: var(--color-blue-da-light);
+    --button-color: var(--color-gray-06);
+    --button-bg-color: var(--color-primary-da-blue-light);
     --button-hover-bg-color: var(--color-blue-light);
-    --button-active-bg-color: var(--color-blue-da);
+    --button-active-bg-color: var(--color-primary-da-blue);
   `,
   outline: css`
-    --button-color: var(--color-blue-da);
+    --button-color: var(--color-primary-da-blue);
     --button-bg-color: transparent;
     --button-hover-bg-color: transparent;
     --button-active-bg-color: var(--color-blue-light);
-    --button-outline-color: var(--color-blue-da-light);
+    --button-outline-color: var(--color-primary-da-blue-light);
     --button-hover-outline-color: var(--color-blue-light);
-    --button-active-outline-color: var(--color-blue-da);
-    --button-disabled-color: var(--color-gray-cc);
+    --button-active-outline-color: var(--color-primary-da-blue);
+    --button-disabled-color: var(---color-gray-05);
     --button-disabled-bg-color: transparent;
   `,
 };
 
 const COLOR_SOLID = {
   blue: css`
-    --button-color: var(--color-gray-ea);
-    --button-bg-color: var(--color-blue-da-light);
+    --button-color: var(--color-gray-06);
+    --button-bg-color: var(--color-primary-da-blue-light);
     --button-hover-bg-color: var(--color-blue-light);
-    --button-active-bg-color: var(--color-blue-da);
-    --button-disabled-color: var(--color-gray-ea);
-    --button-disabled-bg-color: var(--color-black-04);
+    --button-active-bg-color: var(--color-primary-da-blue);
+    --button-disabled-color: var(--color-gray-06);
+    --button-disabled-bg-color: var(--color-blue-black-04);
   `,
   black: css`
-    --button-color: var(--color-gray-ea);
-    --button-bg-color: var(--color-gray-22);
-    --button-hover-bg-color: var(--color-black-02);
-    --button-active-bg-color: var(--color-black-03);
-    --button-disabled-color: var(--color-gray-ea);
-    --button-disabled-bg-color: var(--color-black-04);
+    --button-color: var(--color-gray-06);
+    --button-bg-color: var(--color-gray-01);
+    --button-hover-bg-color: var(--color-blue-black-02);
+    --button-active-bg-color: var(--color-blue-black-03);
+    --button-disabled-color: var(--color-gray-06);
+    --button-disabled-bg-color: var(--color-blue-black-04);
   `,
   red: css`
-    --button-color: var(--color-gray-ea);
-    --button-bg-color: var(--color-red-da);
-    --button-hover-bg-color: var(--color-red-state);
-    --button-active-bg-color: var(--color-red-state);
-    --button-disabled-color: var(--color-gray-ea);
-    --button-disabled-bg-color: var(--color-black-04);
+    --button-color: var(--color-gray-06);
+    --button-bg-color: var(--color-primary-da-red);
+    --button-hover-bg-color: var(--color-state-red-01);
+    --button-active-bg-color: var(--color-primary-da-red);
+    --button-disabled-color: var(--color-gray-06);
+    --button-disabled-bg-color: var(--color-blue-black-04);
   `,
 };
 
 const COLOR_OUTLINE = {
   blue: css`
-    --button-color: var(--color-blue-da);
+    --button-color: var(--color-primary-da-blue);
     --button-bg-color: transparent;
     --button-hover-bg-color: transparent;
     --button-active-bg-color: var(--color-blue-light);
-    --button-outline-color: var(--color-blue-da-light);
+    --button-outline-color: var(--color-primary-da-blue-light);
     --button-hover-outline-color: var(--color-blue-light);
-    --button-active-outline-color: var(--color-blue-da);
-    --button-disabled-color: var(--color-gray-cc);
+    --button-active-outline-color: var(--color-primary-da-blue);
+    --button-disabled-color: var(---color-gray-05);
     --button-disabled-bg-color: transparent;
   `,
   black: css`
-    --button-color: var(--color-black-da);
+    --button-color: var(--color-primary-da-black);
     --button-bg-color: transparent;
     --button-hover-bg-color: transparent;
-    --button-active-bg-color: var(--color-gray-04);
-    --button-outline-color: var(--color-gray-44);
-    --button-hover-outline-color: var(--color-gray-22);
-    --button-active-outline-color: var(--color-gray-22);
-    --button-disabled-color: var(--color-gray-cc);
+    --button-active-bg-color: var(--color-blue-black-04);
+    --button-outline-color: var(--color-gray-02);
+    --button-hover-outline-color: var(--color-gray-01);
+    --button-active-outline-color: var(--color-gray-01);
+    --button-disabled-color: var(---color-gray-05);
     --button-disabled-bg-color: transparent;
   `,
   red: css`
-    --button-color: var(--color-red-da);
+    --button-color: var(--color-primary-da-red);
     --button-bg-color: transparent;
     --button-hover-bg-color: transparent;
-    --button-active-bg-color: var(--color-red-bg);
-    --button-outline-color: var(--color-red-state);
-    --button-hover-outline-color: var(--color-red-da);
-    --button-active-outline-color: var(--color-red-da);
-    --button-disabled-color: var(--color-gray-cc);
+    --button-active-bg-color: var(--color-state-red-02);
+    --button-outline-color: var(--color-state-red-01);
+    --button-hover-outline-color: var(--color-primary-da-red);
+    --button-active-outline-color: var(--color-primary-da-red);
+    --button-disabled-color: var(---color-gray-05);
     --button-disabled-bg-color: transparent;
   `,
 };
@@ -138,24 +138,24 @@ export const StyledButton = styled.button<StyledButtonProps>`
   height: var(--button-height, var(--button-height-md));
   cursor: pointer;
   font-size: var(--button-font-size, var(--font-h5)); // 기본 값 h5, 1.2rem
-  color: var(--button-color, var(--color-gray-ea)); // 기본 텍스트 색상, #eaeaea(gray)
-  background-color: var(--button-bg-color, var(--color-blue-da-light));
+  color: var(--button-color, var(--color-gray-06)); // 기본 텍스트 색상, #eaeaea(gray)
+  background-color: var(--button-bg-color, var(--color-primary-da-blue-light));
   border: none;
   outline: 1px solid var(--button-outline-color, var(--button-bg-color));
   letter-spacing: 0.02rem;
   &:hover {
-    color: var(--button-color, var(--color-gray-ea));
+    color: var(--button-color, var(--color-gray-06));
     background-color: var(--button-hover-bg-color, var(--color-blue-light));
     outline-color: var(--button-hover-outline-color, var(--button-hover-bg-color));
   }
   &:active {
-    background-color: var(--button-active-bg-color, var(--color-blue-da));
+    background-color: var(--button-active-bg-color, var(--color-primary-da-blue));
     outline-color: var(--button-active-outline-color, var(--button-active-bg-color));
   }
   &:disabled {
     pointer-events: none;
-    color: var(--button-disabled-color, var(--color-gray-ea));
-    background-color: var(--button-disabled-bg-color, var(--color-black-04));
-    outline-color: var(--button-disabled-color, var(--color-black-04));
+    color: var(--button-disabled-color, var(--color-gray-06));
+    background-color: var(--button-disabled-bg-color, var(--color-blue-black-04));
+    outline-color: var(--button-disabled-color, var(--color-blue-black-04));
   }
 `;
