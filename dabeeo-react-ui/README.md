@@ -23,7 +23,7 @@
       Admin Design System (Figma)</a>
     </p>
     <p>
-      <a href="https://dabeeo.github.io/  DABEEO-FRONT-MODULE-PUBLIC">storybook</a>
+      <a href="https://dabeeo.github.io/DABEEO-FRONT-MODULE-PUBLIC">storybook</a>
     </p>
     <h3>
 </div>
