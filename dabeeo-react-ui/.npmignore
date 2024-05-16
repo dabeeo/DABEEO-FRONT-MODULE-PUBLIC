@@ -1,0 +1,26 @@
+# package
+yarn.lock
+
+# dependencies
+node_modules/
+
+# dev
+src/
+.eslintrc.json
+.gitignore
+.prettierignore
+.prettierrc.js
+rollup.config.mjs
+vite.config.js
+tsconfig.json
+.yarnrc.yml
+
+# VSCode
+.vscode/
+
+# GIT
+.git
+
+# storybook
+.storybook/
+storybook-static/
