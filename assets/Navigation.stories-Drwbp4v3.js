@@ -1,10 +1,10 @@
-import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-styled.browser.esm-C_rvHyWL.js";import{r as b}from"./index-CTjT7uj6.js";import"./emotion-use-insertion-effect-with-fallbacks.browser.esm-CI9L3Xya.js";const w=""+new URL("logo_studio_3d-Cke9wGlY.svg",import.meta.url).href,V=i.div`
+import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as r}from"./emotion-styled.browser.esm-C_rvHyWL.js";import{r as b}from"./index-CTjT7uj6.js";import"./emotion-use-insertion-effect-with-fallbacks.browser.esm-CI9L3Xya.js";const w=""+new URL("logo_studio_3d-Cke9wGlY.svg",import.meta.url).href,V=r.div`
   display: flex;
   gap: ${({gap:e})=>e&&`${e/10}rem`};
   width: ${({sizeFull:e,wFull:a,width:n})=>e||a?"100%":n&&`${n/10}rem`};
   height: ${({sizeFull:e,hFull:a,height:n})=>e||a?"100%":n&&`${n/10}rem`};
   background-color: ${({bgColor:e})=>e&&e};
-`,R=i.div`
+`,R=r.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   width: ${({sizeFull:e,wFull:a,width:n})=>e||a?"100%":n&&`${n/10}rem`};
   height: ${({sizeFull:e,hFull:a,height:n})=>e||a?"100%":n&&`${n/10}rem`};
   background-color: ${({bgColor:e})=>e&&e};
-`,k=i.div`
+`,k=r.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,11 +21,11 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   width: ${({sizeFull:e,wFull:a,width:n})=>e||a?"100%":n&&`${n/10}rem`};
   height: ${({sizeFull:e,hFull:a,height:n})=>e||a?"100%":n&&`${n/10}rem`};
   background-color: ${({bgColor:e})=>e&&e};
-`,G=i.div`
+`,G=r.div`
   width: ${({width:e})=>e?`${e/10}rem`:"100%"};
   height: ${({height:e})=>e?`${e/10}rem`:"0.1rem"};
   background-color: ${({color:e})=>e?e==="gray"?"var(--color-gray-06)":"var(--color-primary-da-black)":"var(--color-gray-06)"};
-`,B=i.div`
+`,B=r.div`
   z-index: 50;
   position: fixed;
   top: 0;
@@ -38,7 +38,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   padding: 0 3rem;
   // background-color: var(--color-primary-white);
   background-color: #f9f9f9;
-`,z=i.nav`
+`,z=r.nav`
   position: relative;
   width: 100%;
   height: 100%;
@@ -48,7 +48,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   justify-content: space-between;
   font-size: var(--font-h2);
   font-weight: var(--font-weight-700);
-`,W=i.div`
+`,W=r.div`
   display: flex;
   width: 14.2rem;
   height: 100%;
@@ -59,7 +59,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
     align-items: center;
     justify-content: center;
   }
-`,F=i.ul`
+`,F=r.ul`
   margin: 0;
   position: relative;
   display: flex;
@@ -67,7 +67,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   height: 2rem;
   gap: 4rem;
   height: 100%;
-`,P=i.li`
+`,P=r.li`
   display: flex;
   align-items: center;
   position: relative;
@@ -79,14 +79,14 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
     font-weight: ${({$isActive:e})=>e?"var(--font-weight-700)":"var(--font-weight-500);"};
     color: ${({$isActive:e})=>e?"var(--color-gray-01)":"var(--color-blue-black-04);"};
   }
-`,H=i.div`
+`,H=r.div`
   display: flex;
   cursor: pointer;
   img {
     max-width: 100%;
     height: auto;
   }
-`,X=i.div`
+`,X=r.div`
   position: absolute;
   min-width: 12rem;
   width: auto;
@@ -94,21 +94,21 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   top: 8rem;
   left: 50%;
   transform: translateX(-50%);
-`;i.div`
+`;r.div`
   position: absolute;
   width: 12rem;
   z-index: 50;
   top: 8rem;
   left: 50%;
   transform: translateX(-50%);
-`;const Y=i.div`
+`;const Y=r.div`
   width: 100%;
   padding-top: 0.5rem;
-`,Z=i.div`
+`,Z=r.div`
   box-shadow: 0px 3px 15px 0px rgba(153, 153, 153, 0.4);
   border-radius: 0.2rem;
   padding: 0.4rem 0;
-`,J=i(R)`
+`,J=r(R)`
   background: var(--color-primary-white);
   font-size: var(--font-h4);
   font-weight: ${({$isActive:e})=>e?"var(--font-weight-700)":"var(--font-weight-500);"};
@@ -142,7 +142,7 @@ import{j as t}from"./jsx-runtime-Cw0GR0a5.js";import{n as i}from"./emotion-style
   name: string;
   path: string;
   subMenus?: NavMenuItem[];
-}`,signature:{properties:[{key:"idx",value:{name:"number",required:!0}},{key:"name",value:{name:"string",required:!0}},{key:"path",value:{name:"string",required:!0}},{key:"subMenus",value:{name:"Array",elements:[{name:"NavMenuItem"}],raw:"NavMenuItem[]",required:!1}}]}},name:"subMenu"}],return:{name:"void"}}},description:""}}};const Q="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.1179%208V5.5C15.1179%205.22386%2014.8941%205%2014.6179%205H5.27124C4.9951%205%204.77124%205.22386%204.77124%205.5V18.5C4.77124%2018.7761%204.9951%2019%205.27124%2019H14.6179C14.8941%2019%2015.1179%2018.7761%2015.1179%2018.5V16'%20stroke='%23444444'%20stroke-width='2'/%3e%3crect%20x='11.6008'%20y='11.2499'%20width='8'%20height='1.5'%20fill='%23444444'/%3e%3cpath%20d='M17.7734%209.35736L20.2545%2012L17.7734%2014.6426'%20stroke='%23444444'%20stroke-width='1.2'/%3e%3c/svg%3e",d=b.forwardRef((e,a)=>{const{logo:n,logoTitle:p,menus:o,useLogout:x,logoClick:c,menuClick:l,subMenuClick:m,logOutClick:g}=e,[s,u]=b.useState(),[O,M]=b.useState(),D=r=>{u({name:r.name,path:r.path}),console.log(r.subMenus),r.subMenus&&r.subMenus.length>0?M({name:r.subMenus[0].name,path:r.subMenus[0].path}):M(void 0),l&&l({name:r.name,path:r.path})},U=(r,h)=>{M({name:h.name,path:h.path}),u({name:r.name,path:r.path}),m&&m({name:h.name,path:h.path})};return t.jsx(B,{ref:a,...e,children:t.jsxs(z,{children:[t.jsx(V,{width:162,height:40,gap:10,children:t.jsx(W,{onClick:c,children:n?t.jsx("img",{src:n}):t.jsx("span",{children:p})})}),t.jsxs(k,{gap:40,hFull:!0,children:[o&&o.length>0&&t.jsx(F,{children:o.map(r=>t.jsx(E,{menu:r,menuActive:s,subMenuActive:O,menuClick:D,subMenuClick:U},r.idx))}),x&&t.jsx(H,{onClick:g,children:t.jsx("img",{src:Q})})]})]})})});d.defaultProps={logoClick:()=>alert("logo click!!"),logOutClick:()=>alert("logout click!!"),menuClick:e=>alert(`${e.name} : ${e.path}`),subMenuClick:e=>alert(`${e.name} : ${e.path}`),logoTitle:"title이다!!",menus:[{idx:1,name:"매장 관리",path:"매장 관리 경로"},{idx:2,name:"카테고리 관리",path:"카테고리 관리 경로",subMenus:[{idx:1,name:"sub 1",path:"카테고리 관리 서브1 경로"},{idx:2,name:"sub 2",path:"카테고리 관리 서브2 경로"}]},{idx:3,name:"사용자 메뉴",path:"사용자 메뉴 경로",subMenus:[{idx:1,name:"사용자 메뉴 sub 1",path:"사용자 메뉴 sub 1 경로"},{idx:2,name:"사용자 메뉴 sub 2",path:"사용자 메뉴 sub 2 경로"}]},{idx:4,name:"기기 관리",path:"기기 관리 경로"}],useLogout:!0,logo:w};d.displayName="Navigation";d.__docgenInfo={description:`<hr>
+}`,signature:{properties:[{key:"idx",value:{name:"number",required:!0}},{key:"name",value:{name:"string",required:!0}},{key:"path",value:{name:"string",required:!0}},{key:"subMenus",value:{name:"Array",elements:[{name:"NavMenuItem"}],raw:"NavMenuItem[]",required:!1}}]}},name:"subMenu"}],return:{name:"void"}}},description:""}}};const Q="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.1179%208V5.5C15.1179%205.22386%2014.8941%205%2014.6179%205H5.27124C4.9951%205%204.77124%205.22386%204.77124%205.5V18.5C4.77124%2018.7761%204.9951%2019%205.27124%2019H14.6179C14.8941%2019%2015.1179%2018.7761%2015.1179%2018.5V16'%20stroke='%23444444'%20stroke-width='2'/%3e%3crect%20x='11.6008'%20y='11.2499'%20width='8'%20height='1.5'%20fill='%23444444'/%3e%3cpath%20d='M17.7734%209.35736L20.2545%2012L17.7734%2014.6426'%20stroke='%23444444'%20stroke-width='1.2'/%3e%3c/svg%3e",d=b.forwardRef((e,a)=>{const{logo:n,logoTitle:p,menus:o,useLogout:x,logoClick:c,menuClick:l,subMenuClick:m,logOutClick:g}=e,[s,u]=b.useState(),[O,M]=b.useState(),D=i=>{u({name:i.name,path:i.path}),i.subMenus&&i.subMenus.length>0?M({name:i.subMenus[0].name,path:i.subMenus[0].path}):M(void 0),l&&l({name:i.name,path:i.path})},U=(i,h)=>{M({name:h.name,path:h.path}),u({name:i.name,path:i.path}),m&&m({name:h.name,path:h.path})};return t.jsx(B,{ref:a,...e,children:t.jsxs(z,{children:[t.jsx(V,{width:162,height:40,gap:10,children:t.jsx(W,{onClick:c,children:n?t.jsx("img",{src:n}):t.jsx("span",{children:p})})}),t.jsxs(k,{gap:40,hFull:!0,children:[o&&o.length>0&&t.jsx(F,{children:o.map(i=>t.jsx(E,{menu:i,menuActive:s,subMenuActive:O,menuClick:D,subMenuClick:U},i.idx))}),x&&t.jsx(H,{onClick:g,children:t.jsx("img",{src:Q})})]})]})})});d.defaultProps={logoClick:()=>alert("logo click!!"),logOutClick:()=>alert("logout click!!"),menuClick:e=>alert(`${e.name} : ${e.path}`),subMenuClick:e=>alert(`${e.name} : ${e.path}`),logoTitle:"title이다!!",menus:[{idx:1,name:"매장 관리",path:"매장 관리 경로"},{idx:2,name:"카테고리 관리",path:"카테고리 관리 경로",subMenus:[{idx:1,name:"sub 1",path:"카테고리 관리 서브1 경로"},{idx:2,name:"sub 2",path:"카테고리 관리 서브2 경로"}]},{idx:3,name:"사용자 메뉴",path:"사용자 메뉴 경로",subMenus:[{idx:1,name:"사용자 메뉴 sub 1",path:"사용자 메뉴 sub 1 경로"},{idx:2,name:"사용자 메뉴 sub 2",path:"사용자 메뉴 sub 2 경로"}]},{idx:4,name:"기기 관리",path:"기기 관리 경로"}],useLogout:!0,logo:w};d.displayName="Navigation";d.__docgenInfo={description:`<hr>
 <h3>헤더 네비게이션 컴포넌트</h3>
 
 - 레이아웃 헤더에 위치하는 네비게이션 바 컴포넌트입니다.
