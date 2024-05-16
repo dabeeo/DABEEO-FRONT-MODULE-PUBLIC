@@ -51,7 +51,6 @@ export const Navigation = forwardRef((props: NavigationProps, forwardedRef: Forw
    */
   const handleMenuClick = (menu: NavMenuItem): void => {
     setMenuActive({name: menu.name, path: menu.path});
-    console.log(menu.subMenus);
     if (menu.subMenus && menu.subMenus.length > 0) {
       setSubMenuActive({name: menu.subMenus[0].name, path: menu.subMenus[0].path});
     } else {
